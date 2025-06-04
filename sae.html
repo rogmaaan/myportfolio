@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAE - Détails du Projet | Portfolio d'Othmane El Fakkak</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .gallery-image:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-['Pacifico'] text-primary">Othmane</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors">À Propos</a>
+                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors py-2">À Propos</a>
+                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Retour à la liste des projets -->
+    <div class="container mx-auto px-4 py-6">
+        <a href="index.html#projects" class="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
+            <i class="ri-arrow-left-line ri-lg mr-2"></i>
+            <span>Retour aux projets</span>
+        </a>
+    </div>
+
+    <!-- En-tête du projet -->
+    <header class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">SAE</h1>
+        <div class="flex flex-wrap gap-3 mb-6">
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Technologie 1</span>
+            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Technologie 2</span>
+        </div>
+    </header>
+
+    <!-- Image principale du projet -->
+    <section class="container mx-auto px-4 mb-12">
+        <div class="rounded-lg overflow-hidden shadow-lg">
+            <img src="https://readdy.ai/api/search-image?query=project%20work%20team%20collaboration%20software%20development&width=1200&height=600&seq=12&orientation=landscape" alt="SAE Project" class="w-full h-auto object-cover" />
+        </div>
+    </section>
+
+    <!-- Informations du projet -->
+    <section class="container mx-auto px-4 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Colonne de gauche - Informations principales -->
+            <div class="md:col-span-2">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Description du Projet</h2>
+                    <p class="text-gray-700 mb-6">
+                        Description détaillée du projet SAE à ajouter.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Objectifs du Projet</h3>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li>Simplifier la gestion des tâches quotidiennes pour les équipes</li>
+                        <li>Améliorer la collaboration entre les membres de l'équipe</li>
+                        <li>Fournir des analyses détaillées sur la productivité</li>
+                        <li>Créer une interface utilisateur intuitive et responsive</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Défis et Solutions</h3>
+                    <div class="mb-6">
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1">Synchronisation en temps réel</h4>
+                            <p class="text-gray-700">Implémentation de Socket.io pour permettre la mise à jour instantanée des tâches entre tous les utilisateurs connectés.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1">Performance avec de grandes quantités de données</h4>
+                            <p class="text-gray-700">Optimisation des requêtes MongoDB et mise en place d'un système de pagination pour gérer efficacement les projets volumineux.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-1">Expérience utilisateur sur mobile</h4>
+                            <p class="text-gray-700">Développement d'une interface adaptative avec des composants spécifiques pour les appareils mobiles.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Résultats et Impact</h3>
+                    <p class="text-gray-700">
+                        L'application a permis d'augmenter la productivité des équipes de 32% en moyenne. Les utilisateurs rapportent une meilleure organisation de leur travail et une réduction significative du temps passé à coordonner les tâches. Le projet a été adopté par plus de 15 entreprises dans les 3 mois suivant son lancement.
+                    </p>
+                </div>
+                
+                <!-- Galerie d'images -->
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Galerie du Projet</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="gallery-image relative rounded-lg overflow-hidden group">
+                            <img src="https://readdy.ai/api/search-image?query=task%20management%20dashboard%20with%20statistics%2C%20charts%20and%20task%20lists%2C%20clean%20modern%20UI%20design&width=600&height=400&seq=2&orientation=landscape" alt="Dashboard du projet" class="w-full h-64 object-cover" />
+                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
+                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
+                                    Agrandir
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-image relative rounded-lg overflow-hidden group">
+                            <img src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20for%20task%20management%2C%20showing%20task%20details%20and%20calendar%20view%20on%20smartphone%20screen&width=600&height=400&seq=3&orientation=landscape" alt="Version mobile" class="w-full h-64 object-cover" />
+                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
+                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
+                                    Agrandir
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-image relative rounded-lg overflow-hidden group">
+                            <img src="https://readdy.ai/api/search-image?query=team%20collaboration%20feature%20in%20task%20management%20app%2C%20showing%20chat%20and%20file%20sharing%20interface&width=600&height=400&seq=4&orientation=landscape" alt="Fonctionnalité de collaboration" class="w-full h-64 object-cover" />
+                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
+                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
+                                    Agrandir
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gallery-image relative rounded-lg overflow-hidden group">
+                            <img src="https://readdy.ai/api/search-image?query=analytics%20dashboard%20for%20task%20management%20application%20showing%20productivity%20metrics%20and%20team%20performance&width=600&height=400&seq=5&orientation=landscape" alt="Tableau d'analyse" class="w-full h-64 object-cover" />
+                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
+                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
+                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
+                                    Agrandir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Colonne de droite - Informations techniques et liens -->
+            <div>
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Détails Techniques</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-medium text-gray-800 mb-2">Technologies Utilisées</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+                                    <i class="ri-reactjs-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">React.js (Frontend)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-nodejs-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Node.js (Backend)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-500 mr-3">
+                                    <i class="ri-server-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Express.js (API)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-700 mr-3">
+                                    <i class="ri-database-2-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">MongoDB (Base de données)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-purple-600 mr-3">
+                                    <i class="ri-redux-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Redux (Gestion d'état)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-8 h-8 flex items-center justify-center text-blue-400 mr-3">
+                                    <i class="ri-plug-line ri-lg"></i>
+                                </div>
+                                <span class="text-gray-700">Socket.io (Temps réel)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-medium text-gray-800 mb-2">Fonctionnalités Clés</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                            <li>Authentification sécurisée (JWT)</li>
+                            <li>Gestion des tâches en temps réel</li>
+                            <li>Tableaux de bord personnalisables</li>
+                            <li>Notifications et rappels</li>
+                            <li>Rapports et analyses</li>
+                            <li>Interface responsive</li>
+                            <li>Intégration avec Google Calendar</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-gray-800 mb-2">Méthodologie</h3>
+                        <p class="text-gray-700 mb-1">Développement Agile (Scrum)</p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
+                            <div class="w-8 h-8 flex items-center justify-center mr-3">
+                                <i class="ri-global-line ri-lg"></i>
+                            </div>
+                            <span>Site du projet</span>
+                        </a>
+                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
+                            <div class="w-8 h-8 flex items-center justify-center mr-3">
+                                <i class="ri-github-fill ri-lg"></i>
+                            </div>
+                            <span>Code source (GitHub)</span>
+                        </a>
+                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
+                            <div class="w-8 h-8 flex items-center justify-center mr-3">
+                                <i class="ri-youtube-line ri-lg"></i>
+                            </div>
+                            <span>Démo vidéo</span>
+                        </a>
+                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
+                            <div class="w-8 h-8 flex items-center justify-center mr-3">
+                                <i class="ri-file-pdf-line ri-lg"></i>
+                            </div>
+                            <span>Documentation technique</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Période de Réalisation</h2>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
+                            <i class="ri-calendar-line ri-lg"></i>
+                        </div>
+                        <span class="text-gray-700">Janvier 2025 - Avril 2025</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
+                            <i class="ri-time-line ri-lg"></i>
+                        </div>
+                        <span class="text-gray-700">Durée: 4 mois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets connexes -->
+    <section class="container mx-auto px-4 mb-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-8">Projets Connexes</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="project-detail.html" class="group">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=e-commerce%20website%20interface%20with%20product%20listings%20and%20shopping%20cart%20on%20laptop%20screen&width=600&height=400&seq=6&orientation=landscape" alt="Projet E-commerce" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Plateforme E-commerce</h3>
+                        <p class="text-gray-600 mb-3 line-clamp-2">Site de commerce électronique avec système de paiement intégré et gestion des stocks en temps réel.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">React</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Stripe</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="project-detail.html" class="group">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=mobile%20fitness%20application%20interface%20showing%20workout%20tracking%20and%20progress%20charts%20on%20smartphone%20screen&width=600&height=400&seq=7&orientation=landscape" alt="Application Fitness" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Application Fitness</h3>
+                        <p class="text-gray-600 mb-3 line-clamp-2">Application mobile pour suivre les entraînements et analyser les progrès sportifs.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">React Native</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Firebase</span>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="project-detail.html" class="group">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=real%20estate%20property%20listing%20website%20showing%20apartment%20listings%20and%20map%20interface&width=600&height=400&seq=8&orientation=landscape" alt="Plateforme Immobilière" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Plateforme Immobilière</h3>
+                        <p class="text-gray-600 mb-3 line-clamp-2">Site web de recherche immobilière avec filtres avancés et visualisation cartographique.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Vue.js</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Django</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Modal pour l'agrandissement des images -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full">
+            <button id="closeModal" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
+                <i class="ri-close-line ri-2x"></i>
+            </button>
+            <img id="modalImage" src="" alt="Image agrandie" class="w-full h-auto rounded-lg" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-['Pacifico'] text-white">Portfolio</a>
+                    <p class="mt-2 text-gray-400">Développeur Web Full Stack</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-github-fill ri-lg"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-linkedin-box-fill ri-lg"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-twitter-fill ri-lg"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-mail-fill ri-lg"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 Mon Portfolio. Tous droits réservés.</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors mr-6">Politique de confidentialité</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobileMenuScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+                }
+            });
+        });
+    </script>
+
+    <script id="imageGalleryScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+            const viewImageButtons = document.querySelectorAll('.view-image-btn');
+            
+            viewImageButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const imgSrc = this.closest('.gallery-image').querySelector('img').src;
+                    modalImage.src = imgSrc;
+                    imageModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                imageModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            imageModal.addEventListener('click', function(e) {
+                if (e.target === imageModal) {
+                    imageModal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                    imageModal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
