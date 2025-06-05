@@ -33,9 +33,8 @@
             <a href="index.html" class="text-2xl font-['Pacifico'] text-primary">Othmane</a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
-                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors">À Propos</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
-                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
                 <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
             </div>
             <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
@@ -44,15 +43,14 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
-                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
-                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors py-2">À Propos</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
-                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
-                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+                <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                    <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                    <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+                </div>
             </div>
-        </div>
     </nav>
 
     <!-- Retour à la liste des projets -->
@@ -65,7 +63,7 @@
 
     <!-- En-tête du projet -->
     <header class="container mx-auto px-4 py-6">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">BINM+</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Platform Intern</h1>
         <div class="flex flex-wrap gap-3 mb-6">
             <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">PHP 8.2</span>
             <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">MySQL/MariaDB</span>
@@ -77,16 +75,17 @@
 
     <!-- Image principale du projet -->
     <section class="container mx-auto px-4 mb-12">
-        <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="https://readdy.ai/api/search-image?query=modern%20server%20room%20infrastructure&width=1200&height=600&seq=1&orientation=landscape" alt="BINM+ Project" class="w-full h-auto object-cover" />
-        </div>
+            <figure class="rounded-lg overflow-hidden shadow-lg max-h-80">
+                <img src="Image/image1.png" alt="BINM+ Project" class="w-full h-80 object-cover" width="1000" height="320" />
+                <figcaption class="text-center text-gray-600 mt-2">Image principale du projet BINM+</figcaption>
+            </figure>
     </section>
 
     <!-- Informations du projet -->
     <section class="container mx-auto px-4 mb-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Colonne de gauche - Informations principales -->
-            <div class="md:col-span-2 flex gap-6">
+            <div class="md:col-span-2 flex flex-col gap-6">
                 <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">Présentation du projet BINM+</h2>
                     <p class="text-gray-700 mb-6">
@@ -116,62 +115,406 @@
                     <p class="text-gray-700 mb-6">
                         J’ai aussi mis en place un système d’authentification sécurisé via des sessions PHP, avec gestion des rôles (admin / employé) et droits d’accès différenciés. Chaque fonctionnalité de la plateforme a été testée, validée et intégrée dans un environnement responsive accessible depuis tous types d’écrans.
                     </p>
-                    <p class="text-gray-700 mb-6">
-                        Ce projet m’a permis de combiner mes compétences en conception de base de données, programmation web sécurisée, UX/UI et gestion d’un projet complet, du besoin métier jusqu’à la mise en production.
+                </div>
+                <!-- New empty block for user content -->
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Trace 1 – Architecture technique de la plateforme BINM+</h2>
+                    <p class="text-gray-700 mb-4">🧠 Savoir-faire mobilisé :<br />
+                        Concevoir une architecture client-serveur sécurisée.<br /><br />
+                        Structurer un projet web de manière modulaire et évolutive.<br /><br />
+                        Intégrer des outils modernes pour la compilation et l’optimisation frontend.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dans le cadre du développement de la plateforme BINM+, j’ai conçu une architecture logicielle claire, modulaire et orientée production.<br />
+                        J’ai résumé cette organisation dans un schéma technique que j’ai moi-même produit, visible ci-dessous :
+                    </p>
+                    <div class="mb-6">
+                        <figure>
+                            <img src="Image/Architecture technique de la plateforme.png" alt="Architecture technique de la plateforme BINM+" class="rounded-lg shadow-md w-full max-w-full" />
+                            <figcaption class="text-center text-gray-600 mt-2">Architecture technique de la plateforme BINM+</figcaption>
+                        </figure>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Ce schéma représente l’ensemble des composants du projet, classés par couches fonctionnelles.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🔧 Côté serveur (backend) :</p>
+                    <p class="text-gray-700 mb-4">
+                        Le backend est développé en PHP 8.2. Il gère :<br />
+                        les requêtes métiers,<br />
+                        les connexions à la base de données via PDO,<br />
+                        les sessions utilisateur pour la sécurité.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Chaque action (CRUD sur les annonces, messagerie, formations…) est gérée par un script dédié, stocké dans le dossier api/. Cette structure respecte le principe de séparation des responsabilités.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">💾 Côté base de données :</p>
+                    <p class="text-gray-700 mb-4">
+                        J’ai conçu une base relationnelle MySQL, en respectant les principes de modélisation normalisée (3FN) :<br />
+                        chaque module (formations, utilisateurs, messages, annonces…) est lié via des clés étrangères,<br />
+                        les données sont cohérentes et facilement requêtables.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🖥️ Côté client (frontend) :</p>
+                    <p class="text-gray-700 mb-4">
+                        L’interface utilisateur est développée avec HTML et Tailwind CSS. Ce choix m’a permis de créer rapidement une interface moderne et responsive, tout en gardant un poids très léger.<br />
+                        Les ressources (JS, CSS) sont ensuite optimisées avec Vite, un bundler moderne :<br />
+                        génération d’un bundle dans dist/,<br />
+                        chargement rapide côté client,<br />
+                        compatibilité multi-support (desktop, tablette, smartphone).
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🔐 Sécurité et rôles :</p>
+                    <p class="text-gray-700 mb-4">
+                        La sécurité est assurée par :<br />
+                        l’utilisation de sessions PHP,<br />
+                        une gestion stricte des rôles : administrateur (accès complet), employé (accès restreint),<br />
+                        des vérifications serveurs systématiques à chaque action critique.
                     </p>
                 </div>
-                <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Trace 2 – Organisation modulaire du projet et structure des fichiers</h2>
+                    <p class="text-gray-700 mb-4">🧠 Savoir-faire mobilisé :<br />
+                        Structurer un projet web de manière claire et maintenable.<br /><br />
+                        Organiser les fichiers selon les responsabilités (logique, données, interface).<br /><br />
+                        Préparer un projet pour la mise en production (optimisation, séparation du code).
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Pour faciliter le développement, la maintenance et l’évolution de la plateforme BINM+, j’ai conçu une organisation modulaire du projet, structurée autour de dossiers fonctionnels bien définis. Cette organisation m’a permis de séparer proprement la logique applicative, la base de données, les ressources statiques, et les pages d’interface.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">J’ai illustré cette organisation dans une capture d’écran de l’arborescence complète du projet, affichée ci-dessous.</p>
+                    <div class="flex flex-col md:flex-row md:items-start md:space-x-8 mb-6">
+                        <figure>
+                            <img src="Image/arborescence du projet.PNG" alt="Arborescence du projet BINM+" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2">Arborescence complète du projet BINM+</figcaption>
+                        </figure>
+                        <div class="flex flex-col space-y-6">
+                            <div>
+                                <p class="text-gray-700 mb-4 font-semibold">📁 Structure principale du projet</p>
+                                <ul class="list-disc pl-5 text-gray-700 mb-4 max-w-md">
+                                    <li><code>api/</code> : contient les scripts PHP pour gérer les actions métier (ajout d’annonces, gestion des formations, envoi de messages, etc.). Chaque action possède son propre fichier pour faciliter la maintenance.</li>
+                                    <li><code>db/</code> : contient le fichier de connexion à la base de données (<code>connect.php</code>) via PDO, ainsi que les fonctions utilitaires.</li>
+                                    <li><code>includes/</code> : regroupe les éléments HTML/PHP réutilisables (ex. : en-tête, barre de navigation, pied de page).</li>
+                                    <li><code>pages/</code> : répertoire contenant les pages principales de l’application (dashboard, annonces, formations, messagerie, etc.).</li>
+                                    <li><code>assets/</code> : ressources statiques du projet (images, fichiers CSS ou JavaScript non compilés).</li>
+                                    <li><code>uploads/</code> : stockage des fichiers envoyés par les utilisateurs (images d’annonces, avatars, fichiers de formation…).</li>
+                                    <li><code>dist/</code> : fichiers CSS/JS optimisés générés automatiquement par Vite pour la version en production.</li>
+                                    <li><code>vite/</code> : fichiers de configuration liés à l’outil Vite.</li>
+                                    <li><code>sql/</code> : scripts SQL pour créer et initialiser la base de données.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 mb-4 font-semibold">Fichiers racine :</p>
+                                <ul class="list-disc pl-5 text-gray-700 mb-4 max-w-md">
+                                    <li><code>index.php</code> (page d’accueil / tableau de bord),</li>
+                                    <li><code>traitement_login.php</code> (connexion utilisateur),</li>
+                                    <li><code>logout.php</code> (déconnexion),</li>
+                                    <li><code>.htaccess</code> (configuration Apache).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 font-semibold">🧩 Exemple de code à mettre en avant</p>
+                    <div class="mb-6">
+                        <figure>
+                            <img src="Image/connectcodescrean.PNG" alt="Exemple de code connect.php" class="rounded-lg shadow-md max-w-full" />
+                            <figcaption class="text-center text-gray-600 mt-2">Exemple de code connect.php</figcaption>
+                        </figure>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Ce fichier permet une connexion sécurisée à la base avec gestion des erreurs grâce à PDO.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🎯 Résultat</p>
+                    <p class="text-gray-700 mb-4">
+                        Cette organisation m’a permis de :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>travailler efficacement,</li>
+                        <li>ajouter facilement de nouvelles fonctionnalités,</li>
+                        <li>préparer le projet à une mise en production réelle grâce à Vite et à une séparation claire des responsabilités techniques.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Trace 3 – Modélisation de la base de données</h2>
+                    <p class="text-gray-700 mb-4">🧠 Savoir-faire mobilisé :<br />
+                        Concevoir une base de données relationnelle normalisée.<br /><br />
+                        Définir des entités et relations cohérentes avec les besoins métiers.<br /><br />
+                        Assurer l’intégrité, la cohérence et l’évolutivité des données.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Pour la plateforme BINM+, j’ai conçu une base de données relationnelle sous MySQL spécifiquement adaptée aux besoins de gestion d’utilisateurs, de modules de formation, de messagerie interne et d’annonces.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Cette base de données repose sur une modélisation normalisée en 3e forme normale, ce qui permet d’assurer :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>l’absence de redondance inutile,</li>
+                        <li>la facilité des requêtes SQL,</li>
+                        <li>la cohérence entre les données.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold">📎 Schéma relationnel de la base de données :</p>
+                    <figure class="mb-6 mx-auto max-w-full">
+                        <img src="Image/schéma relationnel.PNG" style="text-align:center" alt="Schéma relationnel de la base de données" class="rounded-lg shadow-md max-w-full"/>
+                        <figcaption class="text-center text-gray-600 mt-2">Schéma relationnel de la base de données</figcaption>
+                    </figure>
+                    <p class="text-gray-700 mb-4 font-semibold">🗂️ Principales entités</p>
+                    <p class="text-gray-700 mb-4">Voici les tables principales créées dans la base binm_plus :</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li><code>utilisateurs</code> : stocke les données personnelles et les rôles des utilisateurs (nom, prénom, email, mot de passe, rôle, photo de profil...).</li>
+                        <li><code>annonces</code> : contient les annonces internes visibles sur le dashboard, avec une priorité et une date de publication.</li>
+                        <li><code>formations</code> : chaque formation contient un titre, une description, un formateur, une catégorie et une durée.</li>
+                        <li><code>modules</code> : chaque formation est divisée en modules pédagogiques pour mieux structurer les contenus.</li>
+                        <li><code>contenus</code> : associés aux modules, ils permettent d’attacher du texte, des vidéos, des documents ou des images.</li>
+                        <li><code>quizzes, quiz_questions, quiz_propositions</code> : structure complète pour créer des quiz interactifs avec choix multiples.</li>
+                        <li><code>messages</code> : gestion des messages envoyés entre utilisateurs.</li>
+                        <li><code>groupes et group_members</code> : permettent une éventuelle gestion de groupes de discussion (extension prévue).</li>
+                        <li><code>formations_suivies, formations_complétées</code> : assurent le suivi et la validation progressive des parcours.</li>
+                        <li><code>events</code> : pour les événements personnels des utilisateurs (calendrier intégré).</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold">🎯 Résultat</p>
+                    <p class="text-gray-700 mb-4">Cette structure m’a permis :</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>de gérer efficacement les inscriptions, les contenus et les utilisateurs,</li>
+                        <li>d’assurer une évolution future (ajout de modules, statistiques...),</li>
+                        <li>et de maintenir un code backend propre et compréhensible, grâce à la correspondance claire entre les entités et les scripts PHP dans le dossier api/.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Trace 4 – Authentification et sécurité de la plateforme</h2>
+                    <p class="text-gray-700 mb-4">🧠 Savoir-faire mobilisé :<br />
+                        Implémenter un système d’authentification sécurisé via sessions PHP.<br /><br />
+                        Gérer les accès selon les rôles (administrateur / employé).<br /><br />
+                        Appliquer les bonnes pratiques de protection des données utilisateurs.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        L’un des éléments clés dans le développement de la plateforme BINM+ était la sécurisation de l’accès aux données et des fonctionnalités. J’ai donc mis en place un système d’authentification basé sur des sessions PHP, couplé à une gestion stricte des rôles pour contrôler l’accès à chaque module de la plateforme.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">📎 Capture d’écran de la page de profil avec la gestion du rôle :</p>
+                    <figure class="mb-6 mx-auto max-w-full">
+                        <img src="Image/Gérer les utilisateurs.PNG" alt="Page de profil avec gestion du rôle" class="rounded-lg shadow-md max-w-full" />
+                        <figcaption class="text-center text-gray-600 mt-2">Page de profil avec gestion du rôle</figcaption>
+                    </figure>
+                    <p class="text-gray-700 mb-4 font-semibold">🔐 Fonctionnement de l’authentification</p>
+                    <p class="text-gray-700 mb-4">
+                        Lorsqu’un utilisateur tente de se connecter, ses identifiants sont vérifiés dans la base utilisateurs.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Si l’email et le mot de passe sont valides, une session sécurisée est créée côté serveur.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Les informations importantes (ID, prénom, rôle) sont stockées en session et utilisées pour adapter dynamiquement l’interface.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Un utilisateur non connecté ou dont le rôle n’est pas autorisé est automatiquement redirigé vers la page de connexion.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🔑 Gestion des rôles</p>
+                    <p class="text-gray-700 mb-4">
+                        Deux niveaux de droits ont été définis :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Administrateur : accès complet à toutes les sections de la plateforme (utilisateurs, annonces, formations, statistiques...).</li>
+                        <li>Employé : accès limité à ses annonces, formations, messagerie et calendrier personnel.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4">
+                        Chaque page sensible comporte une vérification systématique du rôle grâce aux données stockées en session.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🧩 extrait de traitement_login.php :</p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>session_start();
+include('db/connect.php');
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$req = $pdo->prepare("SELECT * FROM utilisateurs WHERE email = ?");
+$req->execute([$email]);
+$user = $req->fetch();
+
+if ($user &amp;&amp; password_verify($password, $user['mot_de_passe'])) {
+    $_SESSION['id'] = $user['id'];
+    $_SESSION['prenom'] = $user['prenom'];
+    $_SESSION['role'] = $user['role'];
+    header('Location: pages/dashboard.php');
+} else {
+    header('Location: index.php?error=1');
+}
+</code></pre>
+                    <p class="text-gray-700 mb-4">
+                        Ce script protège la connexion avec password_verify et initialise les variables de session pour l’accès sécurisé.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🎯 Résultat</p>
+                    <p class="text-gray-700 mb-4">
+                        Cette mise en place m’a permis de :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>garantir que chaque utilisateur ne voit que ce qu’il est autorisé à voir,</li>
+                        <li>protéger les données sensibles avec une gestion fiable des sessions,</li>
+                        <li>et prévenir les accès non autorisés via des redirections automatiques.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4">
+                        L’ensemble des modules de la plateforme vérifie l’authentification dès le chargement, ce qui renforce la sécurité globale de l’application.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Trace 5 – Développement des modules fonctionnels</h2>
+                    <p class="text-gray-700 mb-4">🧠 Savoir-faire mobilisé :<br />
+                        Développer des modules métier dynamiques avec PHP/MySQL.<br /><br />
+                        Créer une interface utilisateur responsive avec Tailwind CSS.<br /><br />
+                        Gérer des interactions complexes entre utilisateurs, contenus et données.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        L’un des objectifs majeurs de la plateforme BINM+ était de proposer aux collaborateurs un espace de travail centralisé regroupant plusieurs outils métiers. J’ai donc développé plusieurs modules fonctionnels, accessibles depuis le tableau de bord, chacun connecté à la base de données et au système d’authentification.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">📎 Capture d'écrans :</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Page des annonces internes" onclick="openImageModal('Image/Annonces.PNG')">
+                                <img src="Image/Annonces.PNG" alt="Page des annonces internes" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Page des annonces internes</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Interface de la messagerie privée" onclick="openImageModal('Image/Messagerie.PNG')">
+                                <img src="Image/Messagerie.PNG" alt="Interface de la messagerie privée" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Interface de la messagerie privée</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Liste des formations" onclick="openImageModal('Image/Formations.PNG')">
+                                <img src="Image/Formations.PNG" alt="Liste des formations" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Liste des formations</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Gérer les annonces" onclick="openImageModal('Image/Gérer les annonces.PNG')">
+                                <img src="Image/Gérer les annonces.PNG" alt="Gérer les annonces" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Gérer les annonces</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Gérer les formations" onclick="openImageModal('Image/Gérer les formations.PNG')">
+                                <img src="Image/Gérer les formations.PNG" alt="Gérer les formations" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Gérer les formations</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <button class="focus:outline-none" aria-label="Agrandir image Modules et Contenu" onclick="openImageModal('Image/Modules & Contenu.PNG')">
+                                <img src="Image/Modules & Contenu.PNG" alt="Modules et Contenu" class="w-full max-w-xs rounded cursor-pointer" />
+                            </button>
+                            <span class="mt-2 text-center text-gray-700 text-sm">Modules et Contenu</span>
+                        </div>
+                    </div>
+                    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
+                        <div class="relative max-w-full max-h-full">
+<button id="closeModal" class="absolute top-4 right-4 text-white bg-red-600 hover:bg-red-800 transition-colors z-50 rounded-full p-1 w-8 h-8 flex items-center justify-center text-2xl font-bold shadow-lg" aria-label="Fermer l'image agrandie">
+                                ×
+                            </button>
+                            <img id="modalImage" src="" alt="Image agrandie" class="max-w-full max-h-full rounded-lg" />
+                        </div>
+                    </div>
+                    <script>
+                        function openImageModal(src) {
+                            const imageModal = document.getElementById('imageModal');
+                            const modalImage = document.getElementById('modalImage');
+                            modalImage.src = src;
+                            imageModal.classList.remove('hidden');
+                            document.body.style.overflow = 'hidden';
+                        }
+                        document.getElementById('closeModal').addEventListener('click', function() {
+                            const imageModal = document.getElementById('imageModal');
+                            imageModal.classList.add('hidden');
+                            document.body.style.overflow = 'auto';
+                        });
+                        document.getElementById('imageModal').addEventListener('click', function(e) {
+                            if (e.target === this) {
+                                this.classList.add('hidden');
+                                document.body.style.overflow = 'auto';
+                            }
+                        });
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === 'Escape') {
+                                const imageModal = document.getElementById('imageModal');
+                                if (!imageModal.classList.contains('hidden')) {
+                                    imageModal.classList.add('hidden');
+                                    document.body.style.overflow = 'auto';
+                                }
+                            }
+                        });
+                    </script>
+                    <p class="text-gray-700 mb-4 font-semibold">🗂️ Modules développés</p>
+                    <ol class="list-decimal pl-5 text-gray-700 mb-4 space-y-2">
+                        <li><strong>Module d’annonces internes</strong><br />
+                            Permet aux administrateurs de créer, modifier, prioriser et supprimer des annonces visibles par tous les employés.<br />
+                            Les annonces sont triées selon leur priorité (haute, normale, basse).<br />
+                            Archivage automatique des anciennes annonces.
+                        </li>
+                        <li><strong>Module de messagerie privée</strong><br />
+                            Les utilisateurs peuvent s’envoyer des messages en toute confidentialité.<br />
+                            Le système gère les conversations individuelles avec affichage en temps réel.<br />
+                            L’envoi de pièces jointes est pris en charge via le système uploads/messages/.
+                        </li>
+                        <li><strong>Module de formations</strong><br />
+                            L’administrateur crée des parcours de formation structurés par modules.<br />
+                            Chaque module contient des ressources pédagogiques : texte, documents, vidéos.<br />
+                            Les employés peuvent s’inscrire, consulter leur progression et valider chaque étape.<br />
+                            Un système de quiz permet d’évaluer les acquis.
+                        </li>
+                        <li><strong>Calendrier personnel</strong><br />
+                            Chaque utilisateur peut ajouter, modifier ou supprimer des événements.<br />
+                            Le calendrier est lié à ses formations ou projets internes.
+                        </li>
+                    </ol>
+                    <p class="text-gray-700 mb-4 font-semibold">🧩 Exemple de code : CRUD d’une annonce (simplifié)</p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>include('../db/connect.php');
+
+$titre = $_POST['titre'];
+$contenu = $_POST['contenu'];
+$priorite = $_POST['priorite'];
+
+$req = $pdo->prepare("INSERT INTO annonces (titre, contenu, priorite, date_pub) VALUES (?, ?, ?, NOW())");
+$req->execute([$titre, $contenu, $priorite]);
+
+header('Location: ../pages/annonces.php');
+</code></pre>
+                    <p class="text-gray-700 mb-4">
+                        Chaque action (ajout, suppression, modification) suit la même logique via des fichiers dédiés dans api/.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold">🎯 Résultat</p>
+                    <p class="text-gray-700 mb-4">
+                        Grâce à cette structuration :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Chaque module fonctionne de manière autonome tout en respectant la même logique technique.</li>
+                        <li>L’interface reste homogène et intuitive grâce à Tailwind CSS.</li>
+                        <li>Le code est clairement organisé et facilement maintenable.</li>
+                        <li>Les utilisateurs bénéficient d’un espace riche, pratique et entièrement intégré.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 order-last md:order-first">
                     <h2 class="text-xl font-bold text-gray-800 mb-4">Informations du Projet</h2>
                     <ul class="space-y-4 text-gray-700">
                         <li class="flex items-center">
-                            <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
-                                <i class="ri-calendar-line ri-lg"></i>
+                            <div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+                                <i class="ri-flag-line ri-lg"></i>
                             </div>
                             <span>Période du projet : Janvier – Avril 2025</span>
                         </li>
                         <li class="flex items-center">
-                            <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
-                                <i class="ri-building-line ri-lg"></i>
+                            <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                <i class="ri-tools-line ri-lg"></i>
                             </div>
                             <span>Entreprise : BINM CONSTRUCTION (Casablanca)</span>
                         </li>
                         <li class="flex items-center">
-                            <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
-                                <i class="ri-briefcase-line ri-lg"></i>
+                            <div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+                                <i class="ri-award-line ri-lg"></i>
                             </div>
                             <span>Projet réalisé dans le cadre de mon stage de fin d'études (BUT Informatique – 3ᵉ année)</span>
                         </li>
                     </ul>
                 </div>
-                
-                <!-- Galerie d'images -->
-                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Galerie du Projet</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=modern%20server%20room%20infrastructure&width=600&height=400&seq=2&orientation=landscape" alt="Infrastructure serveur moderne" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=windows%20server%202019%20data%20center&width=600&height=400&seq=3&orientation=landscape" alt="Windows Server 2019 Data Center" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             
             <!-- Colonne de droite - Informations techniques et liens -->
-            <div>
+            <div class="space-y-8">
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
                     <h2 class="text-xl font-bold text-gray-800 mb-4">Détails Techniques</h2>
                     
@@ -210,6 +553,43 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    <ul class="space-y-4">
+                        <li>
+<a href="https://github.com/rogmaaan/BINM_plus" target="_blank" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+    <i class="ri-github-fill ri-lg"></i>
+</div>
+                                <span>Voir le dépôt GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-global-line ri-lg"></i>
+                                </div>
+                                <span>Voir la démo en ligne</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1scnKPllOCNjkYj-Hp4Hf84wznPuTrpf5/view?usp=sharing" target="_blank" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-indigo-600 mr-3">
+                                    <i class="ri-file-pdf-line ri-lg"></i>
+                                </div>
+                                <span>Documentation technique</span>
+                            </a>
+                        </li>
+                        <li>
+<a href="mailto:othmane.el.fakkak@gmail.com" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+    <i class="ri-mail-line ri-lg"></i>
+</div>
+                                <span>Contactez-moi</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
