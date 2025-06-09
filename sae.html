@@ -3,28 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SAE - Détails du Projet | Portfolio d'Othmane El Fakkak</title>
+    <title>Platform Intern - Détails du Projet | Portfolio d'Othmane El Fakkak</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#27DEBF',secondary:'#2563eb'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
-    <style>
-        :where([class^="ri-"])::before { content: "\f3c2"; }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-        }
-        input[type="number"]::-webkit-inner-spin-button,
-        input[type="number"]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        .gallery-image:hover .overlay {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -33,9 +19,8 @@
             <a href="index.html" class="text-2xl font-['Pacifico'] text-primary">Othmane</a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Accueil</a>
-                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors">À Propos</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
-                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
+                <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors">Compétences</a>
+                <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors font-medium">Projets</a>
                 <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
             </div>
             <button id="mobileMenuButton" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-500">
@@ -44,15 +29,14 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
-                <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
-                <a href="index.html#about" class="text-gray-600 hover:text-primary transition-colors py-2">À Propos</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
-                <a href="index.html#projects" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
-                <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+                <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors py-2">Accueil</a>
+                    <a href="index.html#competences" class="text-gray-600 hover:text-primary transition-colors py-2">Compétences</a>
+                    <a href="index.html#projets" class="text-gray-600 hover:text-primary transition-colors py-2 font-medium">Projets</a>
+                    <a href="index.html#contact" class="text-gray-600 hover:text-primary transition-colors py-2">Contact</a>
+                </div>
             </div>
-        </div>
     </nav>
 
     <!-- Retour à la liste des projets -->
@@ -65,298 +49,688 @@
 
     <!-- En-tête du projet -->
     <header class="container mx-auto px-4 py-6">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">SAE</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">GEST PLANTE (SAÉ S5/S6)</h1>
         <div class="flex flex-wrap gap-3 mb-6">
-            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Technologie 1</span>
-            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Technologie 2</span>
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Java</span>
+            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Vue.js</span>
+            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Arduino C++</span>
+            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Android, Kotlin</span>
         </div>
     </header>
 
     <!-- Image principale du projet -->
     <section class="container mx-auto px-4 mb-12">
-        <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="https://readdy.ai/api/search-image?query=project%20work%20team%20collaboration%20software%20development&width=1200&height=600&seq=12&orientation=landscape" alt="SAE Project" class="w-full h-auto object-cover" />
-        </div>
+            <figure class="rounded-lg overflow-hidden shadow-lg max-h-80">
+                <img src="Image/gest plant.png" alt="GEST PLANTE Project" class="w-full h-80 object-cover" width="1000" height="320" />
+                <figcaption class="text-center text-gray-600 mt-2">Image principale du projet GEST PLANTE</figcaption>
+            </figure>
     </section>
 
     <!-- Informations du projet -->
     <section class="container mx-auto px-4 mb-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Colonne de gauche - Informations principales -->
-            <div class="md:col-span-2">
-                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Description du Projet</h2>
+            <div class="md:col-span-2 flex flex-col gap-6">
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Présentation du projet GEST PLANTE</h2>
                     <p class="text-gray-700 mb-6">
-                        Description détaillée du projet SAE à ajouter.
+                        Le projet GEST PLANTE est une application complexe développée dans le cadre de la SAÉ S5/S6. Elle exploite l'IoT (ESP32, divers capteurs) afin de surveiller en temps réel les conditions environnementales des plantes domestiques. Les données collectées sont traitées, stockées dans MongoDB et visualisées via une interface intuitive développée en Vue.js. Ce projet inclut également un volet IA (analyse des images des plantes), prévu pour être finalisé au semestre S6.
                     </p>
-                    
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Objectifs du Projet</h3>
-                    <ul class="list-disc pl-5 text-gray-700 mb-6">
-                        <li>Simplifier la gestion des tâches quotidiennes pour les équipes</li>
-                        <li>Améliorer la collaboration entre les membres de l'équipe</li>
-                        <li>Fournir des analyses détaillées sur la productivité</li>
-                        <li>Créer une interface utilisateur intuitive et responsive</li>
+                </div>
+                <!-- New empty block for user content -->
+<div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+    Trace 1 : Architecture Logicielle et Matérielle du Projet GEST PLANTE
+</h2>
+<div class="mb-6">
+    <figure>
+        <img src="Image/trace1sae.PNG" alt="Trace 1 - Architecture Logicielle et Matérielle du Projet GEST PLANTE" class="rounded-lg shadow-md w-full max-w-full" />
+        <figcaption class="text-center text-gray-600 mt-2">Schéma architectural du projet GEST PLANTE illustrant l'intégration matérielle et logicielle</figcaption>
+    </figure>
+</div>
+<p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+    <i class="ri-architecture-line text-primary"></i>
+    Explication générale du schéma :
+</p>
+<p class="text-gray-700 mb-4">
+    Le schéma présenté ici illustre l’architecture complète et intégrée du projet GEST PLANTE, conçu dans le cadre de la SAÉ S5-S6. Ce projet vise à créer une solution intelligente de gestion de plantes domestiques, s’appuyant sur l’interconnexion d’éléments matériels (IoT), logiciels, et des techniques avancées d'analyse et de visualisation de données.
+</p>
+<p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+    <i class="ri-tools-line text-primary"></i>
+    Analyse détaillée par composants :
+</p>
+    <ol class="list-decimal pl-5 text-gray-700 mb-4 space-y-4">
+        <li>
+            <strong>Microcontrôleur ESP32 avec capteurs Arduino :</strong><br />
+            Le microcontrôleur ESP32 constitue la pierre angulaire matérielle du système. Associé à plusieurs capteurs (température/humidité DHT11, luminosité LDR, niveau d’eau, humidité du sol), il collecte en continu des données environnementales en temps réel.<br />
+            <em>Technologie utilisée :</em> Arduino IDE, ESP32.<br />
+            <em>Rôle précis :</em><br />
+            Capturer les données des capteurs en temps réel.<br />
+            Assurer la transmission fiable des données via un protocole réseau (TCP/IP) au serveur Java central.<br />
+            <em>Compétences illustrées :</em> Développement d’applications IoT embarquées, gestion des capteurs, et programmation réseau.
+        </li>
+        <li>
+            <strong>Serveur Central Java TCP/IP :</strong><br />
+            Ce serveur Java joue un rôle central dans la gestion des données transmises depuis les microcontrôleurs ESP32. Il garantit la réception simultanée de multiples flux de données grâce à une architecture multithreadée efficace.<br />
+            <em>Technologie utilisée :</em> Java (Sockets TCP), IntelliJ IDEA.<br />
+            <em>Rôle précis :</em><br />
+            Réception simultanée et robuste des flux de données.<br />
+            Traitement primaire (pré-analyse, validation des données).<br />
+            Acheminement sécurisé vers l’API REST pour stockage permanent.<br />
+            <em>Compétences illustrées :</em> Programmation réseau avancée, multithreading, gestion efficace des données.
+        </li>
+        <li>
+            <strong>API REST en Node.js & Base de Données MongoDB :</strong><br />
+            L’API REST conçue avec Node.js et Express est l’interface entre le serveur Java et la base de données MongoDB. Elle permet aussi l’exécution de scripts Python pour effectuer des analyses approfondies sur les données collectées.<br />
+            <em>Technologie utilisée :</em> Node.js, Express, MongoDB, Mongoose, Visual Studio Code.<br />
+            <em>Rôle précis :</em><br />
+            Stocker de manière structurée les données issues des capteurs.<br />
+            Permettre une récupération rapide et flexible des données pour la visualisation frontend.<br />
+            Appeler et gérer des scripts Python pour des analyses de données complexes.<br />
+            <em>Compétences illustrées :</em> Développement backend, gestion de bases de données non relationnelles, création et utilisation d’API REST sécurisée.
+        </li>
+        <li>
+            <strong>Serveur d'analyse Python :</strong><br />
+            Un serveur Python dédié traite les images capturées par l'application mobile. Cette composante du système utilise des algorithmes d'analyse visuelle avancée pour extraire des informations pertinentes concernant la santé des plantes.<br />
+            <em>Technologie utilisée :</em> Python (TensorFlow/OpenCV), Visual Studio Code.<br />
+            <em>Rôle précis :</em><br />
+            Réceptionner et analyser les images transmises par l’application mobile.<br />
+            Détection préliminaire d’anomalies (maladies des plantes, croissance, etc.).<br />
+            Transmission des résultats au serveur Java pour stockage via l'API REST.<br />
+            <em>Compétences illustrées :</em> Analyse multimédia, traitement d’images, intelligence artificielle basique.
+        </li>
+        <li>
+            <strong>Application Mobile (Android, Kotlin) :</strong><br />
+            L’application mobile, développée en Kotlin pour Android, permet aux utilisateurs de capturer facilement des images de leurs plantes et de les envoyer au serveur d'analyse Python.<br />
+            <em>Technologie utilisée :</em> Kotlin, Android Studio.<br />
+            <em>Rôle précis :</em><br />
+            Capturer des images directement ou depuis la galerie.<br />
+            Assurer une communication fiable avec le serveur Python d'analyse.<br />
+            <em>Compétences illustrées :</em> Développement mobile natif, gestion des autorisations utilisateur, design d’interface intuitive.
+        </li>
+        <li>
+            <strong>Frontend Vue.js :</strong><br />
+            Le frontend, développé avec le framework Vue.js, présente de manière visuelle et interactive les données environnementales collectées, permettant aux utilisateurs de comprendre immédiatement l'état et les besoins de leurs plantes.<br />
+            <em>Technologie utilisée :</em> Vue.js, HTML, CSS, JavaScript.<br />
+            <em>Rôle précis :</em><br />
+            Visualiser dynamiquement les données à travers des graphiques interactifs.<br />
+            Fournir une interface utilisateur claire, accessible et sécurisée.<br />
+            <em>Compétences illustrées :</em> Création d’interfaces dynamiques, gestion de données en temps réel, sécurité frontale (gestion d’authentification et autorisations).
+        </li>
+    </ol>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-refresh-line text-primary"></i>
+        Flux de Données et Intégration des Composants :
+    </p>
+    <p class="text-gray-700 mb-4">
+        Ce schéma montre explicitement le parcours logique et physique des données à travers tout le système :
+    </p>
+    <ol class="list-decimal pl-5 text-gray-700 mb-4 space-y-2">
+        <li>Les données initiales viennent des capteurs IoT (ESP32).</li>
+        <li>Elles sont transmises au serveur Java central via TCP.</li>
+        <li>Les données traitées sont stockées via l’API REST dans la base MongoDB.</li>
+        <li>L’application mobile envoie des images au serveur d'analyse Python.</li>
+        <li>Python retourne des informations traitées au serveur central Java.</li>
+        <li>Le frontend récupère les données via l'API pour une visualisation utilisateur claire et utile.</li>
+    </ol>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-book-mark-line text-primary"></i>
+        Synthèse des Compétences Démontrées :
+    </p>
+    <p class="text-gray-700 mb-4">
+        Ce schéma architectural démontre précisément les savoir-faire suivants :
+    </p>
+    <ul class="list-disc pl-5 text-gray-700 mb-4">
+        <li>Développement IoT (collecte et transfert des données).</li>
+        <li>Programmation backend robuste et efficace (Java et Node.js).</li>
+        <li>Utilisation avancée des bases de données non relationnelles (MongoDB).</li>
+        <li>Développement d'applications mobiles natives (Android/Kotlin).</li>
+        <li>Implémentation d'algorithmes d'analyse multimédia (Python).</li>
+        <li>Conception de frontends dynamiques et interactifs (Vue.js).</li>
+    </ul>
+    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+        <i class="ri-bar-chart-line text-primary"></i>
+        Pertinence dans le contexte professionnel :
+    </p>
+    <p class="text-gray-700 mb-4">
+        L’architecture présentée ici répond clairement aux contraintes d’un projet réaliste et complexe. Elle reflète une parfaite maîtrise des technologies modernes et des bonnes pratiques professionnelles en informatique, comme le multithreading, l’API REST, l’IoT, l'IA basique, ainsi que la gestion intégrée et cohérente des données.
+    </p>
+    <p class="text-gray-700 mb-4">
+        Cette trace confirme donc ma capacité à concevoir, réaliser et intégrer efficacement une solution complète, innovante et opérationnelle en informatique.
+    </p>
+</div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        Trace 2: Serveur TCP Java multiclient
+                    </h2>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-flag-line text-primary"></i>
+                        Savoir-faire visé
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Développer une application réseau en Java capable de gérer plusieurs connexions clientes simultanées grâce au multithreading, dans le cadre de la centralisation des mesures IoT.
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-tools-line text-primary"></i>
+                        Contexte du projet
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dans notre projet GEST PLANTE, nous avions besoin d’un serveur capable de recevoir les mesures envoyées en temps réel par plusieurs capteurs (humidité, température, lumière…). Chaque capteur étant connecté à un microcontrôleur ESP32, nous avons développé un serveur TCP en Java utilisant des threads pour traiter plusieurs connexions simultanément, sans blocage.
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center gap-2">
+                        <i class="ri-image-line text-primary"></i>
+                        Traces (captures commentées)
+                    </p>
+                    <div class="flex flex-col md:flex-row md:items-start md:space-x-8 mb-6">
+                        <figure>
+                            <img src="Image/MainServerjava.PNG" alt="Architecture du serveur principal Java" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2">
+                                Schéma de l'architecture du serveur principal Java multithreadé, illustrant la gestion des connexions entrantes par la création de threads dédiés.
+                            </figcaption>
+                            <p class="text-black mt-2">
+                                Ce schéma illustre la boucle d’écoute du serveur TCP multithreadé. Chaque connexion entrante (provenant d’un microcontrôleur ESP32) déclenche l’instanciation d’un nouveau thread dédié (<em>ThreadServer</em>), permettant la gestion simultanée de plusieurs clients sans blocage du serveur principal.
+                            </p>
+                        </figure>
+                        <figure>
+                            <img src="Image/ThreadServerjava.PNG" alt="Gestion des flux clients dans un thread dédié" class="rounded-lg shadow-md mb-6 md:mb-0" />
+                            <figcaption class="text-center text-gray-600 mt-2">
+                                Diagramme de la gestion des flux de communication pour chaque client dans un thread dédié.
+                            </figcaption>
+                            <p class="text-black mt-2">
+                                Ce diagramme montre l’initialisation des flux de communication (<em>BufferedReader</em> et <em>PrintStream</em>) pour chaque client, ainsi que la gestion des requêtes via la méthode <code>requestLoop()</code>. Cette architecture garantit l’indépendance et la robustesse du traitement des données reçues.
+                            </p>
+                        </figure>
+                    </div>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-search-line text-primary"></i>
+                        Extrait de code
+                    </p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>while(true) {
+    sock = conn.accept(); // Attend une connexion
+    ThreadServer t = new ThreadServer(idThread++, sock, exchanger); // Crée un thread client
+    t.start(); // Lance le thread pour traitement parallèle
+}
+</code></pre>
+                    <p class="text-gray-700 mb-4">Ce code montre clairement la mise en place d’un serveur TCP multithreadé. Chaque connexion client est isolée dans un thread, ce qui garantit la stabilité du système, même si plusieurs capteurs envoient des données en même temps.</p>
+                    <p class="text-gray-700 mb-4 font-semibold">Ce que j’ai fait</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Créé une classe MainServer qui écoute en continu les connexions entrantes.</li>
+                        <li>Construit une classe ThreadServer pour gérer chaque client de manière indépendante.</li>
+                        <li>Implémenté une logique de traitement basée sur des commandes texte : AUTOREGISTER, STOREMEASURE, etc.</li>
+                        <li>Relié le serveur à un backend (MongoDB et/ou API Node.js) via la classe DataExchanger.</li>
+                        <li>Testé les connexions avec plusieurs ESP32 en simultané et validé la robustesse du système.</li>
                     </ul>
-                    
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Défis et Solutions</h3>
-                    <div class="mb-6">
-                        <div class="mb-4">
-                            <h4 class="font-medium text-gray-800 mb-1">Synchronisation en temps réel</h4>
-                            <p class="text-gray-700">Implémentation de Socket.io pour permettre la mise à jour instantanée des tâches entre tous les utilisateurs connectés.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h4 class="font-medium text-gray-800 mb-1">Performance avec de grandes quantités de données</h4>
-                            <p class="text-gray-700">Optimisation des requêtes MongoDB et mise en place d'un système de pagination pour gérer efficacement les projets volumineux.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-gray-800 mb-1">Expérience utilisateur sur mobile</h4>
-                            <p class="text-gray-700">Développement d'une interface adaptative avec des composants spécifiques pour les appareils mobiles.</p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Résultats et Impact</h3>
-                    <p class="text-gray-700">
-                        L'application a permis d'augmenter la productivité des équipes de 32% en moyenne. Les utilisateurs rapportent une meilleure organisation de leur travail et une réduction significative du temps passé à coordonner les tâches. Le projet a été adopté par plus de 15 entreprises dans les 3 mois suivant son lancement.
+                    <p class="text-gray-700 mb-4 font-semibold">Ce que cela prouve</p>
+                    <table class="table-auto border-collapse border border-gray-300 w-full text-left mb-6">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 px-4 py-2">Compétence</th>
+                                <th class="border border-gray-300 px-4 py-2">Mise en application</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Programmation réseau</td>
+                                <td class="border border-gray-300 px-4 py-2">Connexion TCP, gestion des flux (lecture/écriture)</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Multithreading</td>
+                                <td class="border border-gray-300 px-4 py-2">Lancement d’un thread par client</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Conception modulaire</td>
+                                <td class="border border-gray-300 px-4 py-2">Séparation claire entre MainServer, ThreadServer et DataExchanger</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Traitement protocolaire simple</td>
+                                <td class="border border-gray-300 px-4 py-2">Commandes personnalisées interprétées ligne par ligne</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Stabilité système</td>
+                                <td class="border border-gray-300 px-4 py-2">Gestion d’exceptions, indépendance des threads</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-gray-700 mb-4 font-semibold">Pourquoi cette trace est pertinente</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Utile : prouve l’implémentation d’un serveur réseau concurrent</li>
+                        <li>Contextualisée : elle est liée au projet GEST PLANTE</li>
+                        <li>Commentée : chaque partie du code est expliquée</li>
+                        <li>Illustrée : les deux captures montrent les deux composantes clés</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        TRACE 3 — Partie Arduino : Lecture des capteurs et transmission des données
+                    </h2>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-lightbulb-flash-line text-primary"></i>
+                        Savoir-faire visé
                     </p>
-                </div>
-                
-                <!-- Galerie d'images -->
-                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Galerie du Projet</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=task%20management%20dashboard%20with%20statistics%2C%20charts%20and%20task%20lists%2C%20clean%20modern%20UI%20design&width=600&height=400&seq=2&orientation=landscape" alt="Dashboard du projet" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20for%20task%20management%2C%20showing%20task%20details%20and%20calendar%20view%20on%20smartphone%20screen&width=600&height=400&seq=3&orientation=landscape" alt="Version mobile" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=team%20collaboration%20feature%20in%20task%20management%20app%2C%20showing%20chat%20and%20file%20sharing%20interface&width=600&height=400&seq=4&orientation=landscape" alt="Fonctionnalité de collaboration" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
-                        <div class="gallery-image relative rounded-lg overflow-hidden group">
-                            <img src="https://readdy.ai/api/search-image?query=analytics%20dashboard%20for%20task%20management%20application%20showing%20productivity%20metrics%20and%20team%20performance&width=600&height=400&seq=5&orientation=landscape" alt="Tableau d'analyse" class="w-full h-64 object-cover" />
-                            <div class="overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity flex items-center justify-center">
-                                <button class="view-image-btn bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap">
-                                    <i class="ri-zoom-in-line ri-lg mr-2 w-5 h-5 flex items-center justify-center"></i>
-                                    Agrandir
-                                </button>
-                            </div>
-                        </div>
+                    <p class="text-gray-700 mb-4">
+                        Lire les données des capteurs Arduino et les transmettre en temps réel à un serveur pour analyse.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-stack-line text-primary"></i>
+                        Contexte du projet
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dans le cadre du projet GEST PLANTE, nous avons utilisé des capteurs Arduino pour collecter des données sur l'environnement des plantes (température, humidité, luminosité, etc.). Ces données sont ensuite transmises à un serveur central pour être analysées et visualisées par les utilisateurs.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-image-line text-primary"></i>
+                        Traces (captures commentées)
+                    </p>
+                    <div class="flex flex-col md:flex-row md:items-start md:space-x-8 mb-6">
+                        <figure class="w-full">
+                            <img src="Image/Schéma%20des%20connexions.png" alt="Schéma des connexions Arduino et serveur" class="rounded-lg shadow-md w-full max-w-full mb-4" />
+                            <figcaption class="text-center text-gray-600 mt-2">
+                                Schéma des connexions entre les capteurs Arduino, le microcontrôleur ESP32 et le serveur central du projet GEST PLANTE.
+                            </figcaption>
+                            <p class="text-black mt-2">
+                                Ce schéma illustre la transmission des données collectées par les capteurs (température, humidité, luminosité, etc.) via l’ESP32 vers le serveur central, mettant en avant l’architecture matérielle et logicielle de la partie embarquée du projet.
+                            </p>
+                        </figure>
                     </div>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-search-line text-primary"></i>
+                        Extrait de code commenté
+                    </p>
+                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>void loop() {
+    // Lire les données des capteurs
+    float temperature = dht.readTemperature();
+    float humidity = dht.readHumidity();
+    int lightLevel = analogRead(LDRPin);
+    
+    // Envoyer les données au serveur
+    if (client.connect(serverIP, serverPort)) {
+        client.print(String(temperature) + "," + String(humidity) + "," + String(lightLevel));
+        client.stop();
+    }
+    delay(2000); // Attendre 2 secondes avant la prochaine lecture
+}
+</code></pre>
+                    <p class="text-gray-700 mb-4">Commentaire : Ce code montre comment les données sont lues à partir des capteurs et envoyées à un serveur via une connexion réseau.</p>
+                    <p class="text-gray-700 mb-4 font-semibold">Ce que j’ai fait</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Connecté des capteurs Arduino à un microcontrôleur ESP32.</li>
+                        <li>Écrit un code pour lire les données des capteurs.</li>
+                        <li>Mis en place une connexion réseau pour envoyer les données à un serveur.</li>
+                        <li>Testé la transmission des données en temps réel.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold">Ce que cela prouve</p>
+                    <table class="table-auto border-collapse border border-gray-300 w-full text-left mb-6">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 px-4 py-2">Compétence</th>
+                                <th class="border border-gray-300 px-4 py-2">Mise en application</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Lecture de capteurs</td>
+                                <td class="border border-gray-300 px-4 py-2">Utilisation de bibliothèques Arduino pour lire des capteurs</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Transmission de données</td>
+                                <td class="border border-gray-300 px-4 py-2">Envoi de données à un serveur via une connexion réseau</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Programmation embarquée</td>
+                                <td class="border border-gray-300 px-4 py-2">Écriture de code pour microcontrôleurs (Arduino IDE)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-gray-700 mb-4 font-semibold">Pourquoi cette trace est pertinente</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Utile : prouve la capacité à lire et transmettre des données de capteurs</li>
+                        <li>Contextualisée : elle est liée au projet GEST PLANTE</li>
+                        <li>Commentée : chaque partie du code est expliquée</li>
+                        <li>Illustrée : les deux captures montrent les deux étapes clés</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        TRACE 4 — Interface Utilisateur (Frontend Vue.js + Dashboard interactif)
+                    </h2>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-lightbulb-flash-line text-primary"></i>
+                        Savoir-faire visé
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Créer une interface web interactive pour visualiser les données des plantes, avec filtres, graphiques, statuts dynamiques et navigation intuitive.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-stack-line text-primary"></i>
+                        Contexte du projet
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        L’interface Frontend du projet GEST PLANTE permet à un utilisateur connecté de :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>consulter l’état de ses plantes</li>
+                        <li>visualiser l’évolution de leurs mesures (température, humidité, etc.)</li>
+                        <li>recevoir des alertes en cas de besoin (plante morte, statut critique, etc.)</li>
+                        <li>naviguer entre les listes, le tableau de bord, les profils et l’espace admin</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4">
+                        Cette interface est développée en Vue.js, avec des tests fonctionnels automatisés en Cucumber + Playwright.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-image-line text-primary"></i>
+                        Capture d’écran de l’interface utilisateur
+                    </p>
+                    <figure class="mb-6 mx-auto max-w-full">
+                        <img src="Image/frontend.PNG" alt="Capture d’écran de l’interface utilisateur" class="rounded-lg shadow-md max-w-full" />
+                        <figcaption class="text-center text-gray-600 mt-2">Tableau de bord principal : cartes de statut, graphique d’évolution, liste des plantes et conseils visuels</figcaption>
+                    </figure>
+                    <p class="text-gray-700 mb-4">
+                        Cette capture illustre le tableau de bord principal :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Cartes de statut en haut (BON, ALERTE, MAUVAIS, MORTE)</li>
+                        <li>Graphique d’évolution des plantes (courbe temporelle)</li>
+                        <li>Liste des plantes récentes et informations complémentaires (type, date, statut)</li>
+                        <li>Espace de conseil visuel pour l’utilisateur</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-code-line text-primary"></i>
+                        Extrait de test fonctionnel en Cucumber (Playwright)
+                    </p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>Given('I am logged in', async function () {
+  await page.goto('http://localhost:8080/login');
+  await page.fill('input[name=\"username\"]', 'user123');
+  await page.fill('input[name=\"password\"]', 'password123');
+  await page.click('button:has-text(\"Log in\")');
+});
+// 🔍 Ce test vérifie que l’utilisateur peut se connecter via l’interface web. Il simule une action réelle avec Playwright.
+
+Then('I should see the dashboard title {string}', async function (title) {
+  const dashboardTitle = await page.textContent('.dashboard-title');
+  expect(dashboardTitle).to.contain(title);
+});
+// 🔍 Ce test assure que l’utilisateur connecté voit bien le bon titre de page et qu’il est bien redirigé vers le tableau de bord.
+</code></pre>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-tools-line text-primary"></i>
+                        Ce que j’ai fait dans cette partie :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Développé une interface modulaire et réactive avec Vue.js</li>
+                        <li>Implémenté un système de statuts dynamiques (BON, ALERTE…) calculés en fonction des données</li>
+                        <li>Intégré des graphiques d’évolution des mesures par plante</li>
+                        <li>Créé une navigation fluide et sécurisée entre les pages (Dashboard, Plantes, Profil, Admin…)</li>
+                        <li>Écrit des tests de vérification fonctionnelle avec Cucumber pour garantir le bon comportement</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-book-2-line text-primary"></i>
+                        Ce que cela prouve
+                    </p>
+                    <table class="table-auto border-collapse border border-gray-300 w-full text-left mb-6">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 px-4 py-2">Compétence</th>
+                                <th class="border border-gray-300 px-4 py-2">Mise en œuvre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Développement Frontend SPA</td>
+                                <td class="border border-gray-300 px-4 py-2">Utilisation de Vue.js, composants dynamiques</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Visualisation de données</td>
+                                <td class="border border-gray-300 px-4 py-2">Intégration de graphiques (probablement Chart.js ou ApexCharts)</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Programmation orientée utilisateur</td>
+                                <td class="border border-gray-300 px-4 py-2">Tableaux dynamiques, filtrage par type et statut</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Tests fonctionnels automatisés</td>
+                                <td class="border border-gray-300 px-4 py-2">Scénarios Cucumber exécutés avec Playwright</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Expérience utilisateur (UX)</td>
+                                <td class="border border-gray-300 px-4 py-2">Navigation claire, accès rapide, design lisible</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-gray-700 mb-4 font-semibold">✅ Pourquoi cette trace est pertinente</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>✔️ une capture d’écran claire</li>
+                        <li>✔️ du code testé</li>
+                        <li>✔️ des fonctions directement liées à l’expérience utilisateur</li>
+                        <li>✔️ une compétence centrale du projet GEST PLANTE</li>
+                    </ul>
+                </div>
+
+                <!-- TRACE 5 — Application mobile Android (envoi d’image pour analyse) -->
+                <div class="bg-white rounded-lg shadow-sm p-6 flex-1 mt-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                        TRACE 5 — Application mobile Android (envoi d’image pour analyse)
+                    </h2>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-bullseye-line text-primary"></i>
+                        Savoir-faire visé
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Développer une application Android native permettant à l’utilisateur de prendre ou sélectionner une image, puis de l’envoyer via une socket TCP à un serveur distant pour traitement.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-building-2-line text-primary"></i>
+                        Contexte du projet
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Dans le projet GEST PLANTE, l’application Android permet aux utilisateurs de prendre en photo une plante ou de sélectionner une image depuis leur galerie, puis de l’envoyer à un serveur d’analyse Python. Le but est de détecter visuellement des symptômes de détérioration à travers une analyse IA.<br>
+                        L’application a été développée en Kotlin avec Android Studio.
+                    </p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-image-line text-primary"></i>
+                        Illustration — Interface de l’application mobile
+                    </p>
+                    <figure class="mb-6 mx-auto max-w-xs">
+                        <img src="Image/mobileapp.PNG" alt="Interface de l’application mobile GEST PLANTE (3 boutons : Choisir, Prendre photo, Envoyer)" class="rounded-lg shadow-md w-full" />
+                        <figcaption class="text-center text-gray-600 mt-2">Interface de l’application mobile : trois boutons principaux pour choisir une image, prendre une photo, et envoyer au serveur.</figcaption>
+                    </figure>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Capturer une photo en direct via la caméra</li>
+                        <li>Choisir une image depuis la galerie</li>
+                        <li>Envoyer l’image au serveur pour analyse automatique</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-code-line text-primary"></i>
+                        Extrait de code (MainActivity.kt)
+                    </p>
+                    <p class="text-gray-700 mb-2 font-semibold">1. Initialisation et permissions</p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>btnTakePhoto.setOnClickListener {
+    if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), CAMERA_PERMISSION_REQUEST_CODE)
+    } else {
+        launchCamera()
+    }
+}
+</code></pre>
+                    <p class="text-gray-600 mb-4">Vérifie et demande dynamiquement la permission d’utiliser la caméra.</p>
+                    <p class="text-gray-700 mb-2 font-semibold">2. Capture ou sélection d’image</p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    if (resultCode == Activity.RESULT_OK) {
+        val photo: Bitmap? = data?.extras?.get("data") as? Bitmap
+        selectedBitmap = photo
+        appLogo.setImageBitmap(photo)
+    }
+}
+</code></pre>
+                    <p class="text-gray-600 mb-4">L’image capturée ou sélectionnée est affichée dans l’application et stockée localement dans un Bitmap.</p>
+                    <p class="text-gray-700 mb-2 font-semibold">3. Envoi de l’image au serveur</p>
+<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm text-gray-800 mb-4"><code>val socket = Socket(serverIp, serverPort)
+val outputStream = socket.getOutputStream()
+bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
+outputStream.write(byteArrayOutputStream.toByteArray())
+outputStream.write("END".toByteArray()) // Fin de transmission
+</code></pre>
+                    <p class="text-gray-600 mb-4">Le Bitmap est compressé en JPEG, envoyé via TCP au serveur Python. Un indicateur END marque la fin.</p>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-tools-line text-primary"></i>
+                        Ce que j’ai fait dans cette partie :
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>Créé l’interface utilisateur avec 3 actions : choisir, prendre, envoyer.</li>
+                        <li>Géré les permissions système Android pour l’accès à la caméra.</li>
+                        <li>Codé la connexion TCP et l’envoi de l’image brute au serveur.</li>
+                        <li>Implémenté la réception de réponse du serveur et un feedback via Toast.</li>
+                        <li>Testé l’ensemble de la chaîne : mobile → réseau → serveur.</li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold flex items-center gap-2">
+                        <i class="ri-book-2-line text-primary"></i>
+                        Ce que cela prouve
+                    </p>
+                    <table class="table-auto border-collapse border border-gray-300 w-full text-left mb-6">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 px-4 py-2">Compétence</th>
+                                <th class="border border-gray-300 px-4 py-2">Mise en œuvre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Développement mobile Android</td>
+                                <td class="border border-gray-300 px-4 py-2">Utilisation de Kotlin, Intents, UI XML</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Gestion multimédia</td>
+                                <td class="border border-gray-300 px-4 py-2">Caméra, galerie, Bitmap</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Communication réseau bas niveau</td>
+                                <td class="border border-gray-300 px-4 py-2">Socket TCP, OutputStream</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Expérience utilisateur</td>
+                                <td class="border border-gray-300 px-4 py-2">Interface fluide, retour utilisateur, permission runtime</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 px-4 py-2">Développement asynchrone</td>
+                                <td class="border border-gray-300 px-4 py-2">Coroutine Dispatchers.IO pour les appels réseau</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-gray-700 mb-4 font-semibold">Pourquoi cette trace est pertinente</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-4">
+                        <li>un exemple concret d’intégration mobile dans un système distribué</li>
+                        <li>gestion des éléments systèmes complexes (caméra, stockage, réseau)</li>
+                        <li>envoi fiable de données multimédia</li>
+                        <li>interface fonctionnelle et réactive</li>
+                        <li>intégration dans une chaîne IoT + IA</li>
+                        <li>utile, illustrée, commentée, centrée sur un apprentissage métier</li>
+                    </ul>
                 </div>
             </div>
-            
+
             <!-- Colonne de droite - Informations techniques et liens -->
-            <div>
+            <div class="space-y-8">
                 <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Détails Techniques</h2>
-                    
-                    <div class="mb-6">
-                        <h3 class="font-medium text-gray-800 mb-2">Technologies Utilisées</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
-                                    <i class="ri-reactjs-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">React.js (Frontend)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
-                                    <i class="ri-nodejs-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">Node.js (Backend)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-green-500 mr-3">
-                                    <i class="ri-server-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">Express.js (API)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-green-700 mr-3">
-                                    <i class="ri-database-2-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">MongoDB (Base de données)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-purple-600 mr-3">
-                                    <i class="ri-redux-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">Redux (Gestion d'état)</span>
-                            </li>
-                            <li class="flex items-center">
-                                <div class="w-8 h-8 flex items-center justify-center text-blue-400 mr-3">
-                                    <i class="ri-plug-line ri-lg"></i>
-                                </div>
-                                <span class="text-gray-700">Socket.io (Temps réel)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <h3 class="font-medium text-gray-800 mb-2">Fonctionnalités Clés</h3>
-                        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                            <li>Authentification sécurisée (JWT)</li>
-                            <li>Gestion des tâches en temps réel</li>
-                            <li>Tableaux de bord personnalisables</li>
-                            <li>Notifications et rappels</li>
-                            <li>Rapports et analyses</li>
-                            <li>Interface responsive</li>
-                            <li>Intégration avec Google Calendar</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 class="font-medium text-gray-800 mb-2">Méthodologie</h3>
-                        <p class="text-gray-700 mb-1">Développement Agile (Scrum)</p>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Informations Techniques</h2>
+                    <p class="text-gray-700 mb-4 font-semibold">Architecture matérielle :</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <i class="ri-cpu-line ri-lg text-blue-500 mr-3"></i>
+                            Microcontrôleur ESP32
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-water-flash-line ri-lg text-green-600 mr-3"></i>
+                            Capteurs DHT11
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-water-flash-line ri-lg text-green-600 mr-3"></i>
+                            Capteurs d'humidité du sol
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-sun-line ri-lg text-yellow-500 mr-3"></i>
+                            Capteur de luminosité (LDR)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-water-line ri-lg text-blue-600 mr-3"></i>
+                            Capteurs de niveau d'eau
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-wifi-line ri-lg text-pink-600 mr-3"></i>
+                            Module Wi-Fi de communication TCP/IP
+                        </li>
+                    </ul>
+                    <p class="text-gray-700 mb-4 font-semibold">Architecture logicielle :</p>
+                    <ul class="list-disc pl-5 text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <i class="ri-server-line ri-lg text-indigo-600 mr-3"></i>
+                            Backend Java multi-threadé (centralisation des données)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-api-line ri-lg text-yellow-600 mr-3"></i>
+                            API REST (Node.js, Express)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-database-2-line ri-lg text-purple-600 mr-3"></i>
+                            Base de données MongoDB avec Mongoose
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-vuejs-fill ri-lg text-green-500 mr-3"></i>
+                            Frontend Vue.js pour la visualisation interactive
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-smartphone-line ri-lg text-pink-500 mr-3"></i>
+                            Application mobile native Android pour la prise de photos
+                        </li>
+                    </ul>
                 </div>
-                
-                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
-                    
-                    <div class="space-y-4">
-                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3">
-                                <i class="ri-global-line ri-lg"></i>
-                            </div>
-                            <span>Site du projet</span>
-                        </a>
-                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3">
-                                <i class="ri-github-fill ri-lg"></i>
-                            </div>
-                            <span>Code source (GitHub)</span>
-                        </a>
-                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3">
-                                <i class="ri-youtube-line ri-lg"></i>
-                            </div>
-                            <span>Démo vidéo</span>
-                        </a>
-                        <a href="#" class="flex items-center text-primary hover:text-primary/80 transition-colors">
-                            <div class="w-8 h-8 flex items-center justify-center mr-3">
-                                <i class="ri-file-pdf-line ri-lg"></i>
-                            </div>
-                            <span>Documentation technique</span>
-                        </a>
-                    </div>
-                </div>
-                
                 <div class="bg-white rounded-lg shadow-sm p-6">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Période de Réalisation</h2>
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
-                            <i class="ri-calendar-line ri-lg"></i>
-                        </div>
-                        <span class="text-gray-700">Janvier 2025 - Avril 2025</span>
-                    </div>
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 flex items-center justify-center text-gray-500 mr-3">
-                            <i class="ri-time-line ri-lg"></i>
-                        </div>
-                        <span class="text-gray-700">Durée: 4 mois</span>
-                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Liens du Projet</h2>
+                    <ul class="space-y-4">
+                        <li>
+<a href="https://github.com/rogmaaan/BINM_plus" target="_blank" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-blue-500 mr-3">
+    <i class="ri-github-fill ri-lg"></i>
+</div>
+                                <span>Voir le dépôt GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-green-600 mr-3">
+                                    <i class="ri-global-line ri-lg"></i>
+                                </div>
+                                <span>Voir la démo en ligne</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1scnKPllOCNjkYj-Hp4Hf84wznPuTrpf5/view?usp=sharing" target="_blank" class="flex items-center text-black hover:text-primary/80 transition-colors">
+                                <div class="w-8 h-8 flex items-center justify-center text-indigo-600 mr-3">
+                                    <i class="ri-file-pdf-line ri-lg"></i>
+                                </div>
+                                <span>Documentation technique</span>
+                            </a>
+                        </li>
+                        <li>
+<a href="mailto:othmane.el.fakkak@gmail.com" class="flex items-center text-black hover:text-primary/80 transition-colors">
+<div class="w-8 h-8 flex items-center justify-center text-pink-600 mr-3">
+    <i class="ri-mail-line ri-lg"></i>
+</div>
+                                <span>Contactez-moi</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Projets connexes -->
-    <section class="container mx-auto px-4 mb-16">
-        <h2 class="text-2xl font-bold text-gray-800 mb-8">Projets Connexes</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="project-detail.html" class="group">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=e-commerce%20website%20interface%20with%20product%20listings%20and%20shopping%20cart%20on%20laptop%20screen&width=600&height=400&seq=6&orientation=landscape" alt="Projet E-commerce" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Plateforme E-commerce</h3>
-                        <p class="text-gray-600 mb-3 line-clamp-2">Site de commerce électronique avec système de paiement intégré et gestion des stocks en temps réel.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">React</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">Stripe</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="project-detail.html" class="group">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=mobile%20fitness%20application%20interface%20showing%20workout%20tracking%20and%20progress%20charts%20on%20smartphone%20screen&width=600&height=400&seq=7&orientation=landscape" alt="Application Fitness" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Application Fitness</h3>
-                        <p class="text-gray-600 mb-3 line-clamp-2">Application mobile pour suivre les entraînements et analyser les progrès sportifs.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">React Native</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Firebase</span>
-                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">GraphQL</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="project-detail.html" class="group">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=real%20estate%20property%20listing%20website%20showing%20apartment%20listings%20and%20map%20interface&width=600&height=400&seq=8&orientation=landscape" alt="Plateforme Immobilière" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Plateforme Immobilière</h3>
-                        <p class="text-gray-600 mb-3 line-clamp-2">Site web de recherche immobilière avec filtres avancés et visualisation cartographique.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Vue.js</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Django</span>
-                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Modal pour l'agrandissement des images -->
-    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4">
-        <div class="relative max-w-4xl w-full">
-            <button id="closeModal" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
-                <i class="ri-close-line ri-2x"></i>
-            </button>
-            <img id="modalImage" src="" alt="Image agrandie" class="w-full h-auto rounded-lg" />
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="text-2xl font-['Pacifico'] text-white">Portfolio</a>
+                    <a href="index.html" class="text-2xl font-['Pacifico'] text-white">Othmane</a>
                     <p class="mt-2 text-gray-400">Développeur Web Full Stack</p>
                 </div>
                 
@@ -385,7 +759,7 @@
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm">© 2025 Mon Portfolio. Tous droits réservés.</p>
+                <p class="text-gray-400 text-sm">© 2025 Othmane El Fakkak. Tous droits réservés.</p>
                 <div class="mt-4 md:mt-0">
                     <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors mr-6">Politique de confidentialité</a>
                     <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Mentions légales</a>
@@ -394,56 +768,57 @@
         </div>
     </footer>
 
-    <script id="mobileMenuScript">
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobileMenuButton');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            mobileMenuButton.addEventListener('click', function() {
-                if (mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.remove('hidden');
-                    mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
-                } else {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
-                }
-            });
-        });
-    </script>
+    <!-- Modal pour l'affichage des images en grand -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden z-[100]">
+        <div class="relative">
+            <img id="modalImage" src="" alt="Image agrandie" class="block object-contain max-w-[calc(100vw-theme(spacing.8))] max-h-[calc(100vh-theme(spacing.8))] lg:max-w-3xl lg:max-h-[85vh]">
+            <button id="closeModal" class="absolute -top-2 -right-2 text-white bg-black bg-opacity-75 rounded-full p-1.5 hover:bg-opacity-100 focus:outline-none z-10">
+                <i class="ri-close-line ri-xl"></i>
+            </button>
+        </div>
+    </div>
 
+    <script src="assets/js/mobileMenu.js"></script>
     <script id="imageGalleryScript">
         document.addEventListener('DOMContentLoaded', function() {
             const imageModal = document.getElementById('imageModal');
             const modalImage = document.getElementById('modalImage');
             const closeModal = document.getElementById('closeModal');
-            const viewImageButtons = document.querySelectorAll('.view-image-btn');
-            
-            viewImageButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const imgSrc = this.closest('.gallery-image').querySelector('img').src;
-                    modalImage.src = imgSrc;
+            // Sélectionne toutes les images DANS la section principale du contenu et DANS les figures
+            const viewImageButtons = document.querySelectorAll('section.container img, figure img');
+
+            viewImageButtons.forEach(img => {
+                // Exclure les images qui sont déjà des liens ou dans des liens
+                if (img.closest('a')) return;
+
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function(e) {
+                    e.preventDefault(); // Empêche le comportement par défaut si l'image est dans un lien (même si on essaie de les exclure)
+                    modalImage.src = this.src;
                     imageModal.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden';
+                    document.body.style.overflow = 'hidden'; // Empêche le défilement de la page en arrière-plan
                 });
             });
-            
-            closeModal.addEventListener('click', function() {
+
+            // Fonction pour fermer la modale
+            function closeModalFunction() {
                 imageModal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            });
-            
+                document.body.style.overflow = 'auto'; // Rétablit le défilement
+            }
+
+            closeModal.addEventListener('click', closeModalFunction);
+
+            // Fermer la modale en cliquant à l'extérieur de l'image
             imageModal.addEventListener('click', function(e) {
                 if (e.target === imageModal) {
-                    imageModal.classList.add('hidden');
-                    document.body.style.overflow = 'auto';
+                    closeModalFunction();
                 }
             });
-            
+
+            // Fermer la modale avec la touche Échap
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
-                    imageModal.classList.add('hidden');
-                    document.body.style.overflow = 'auto';
+                    closeModalFunction();
                 }
             });
         });

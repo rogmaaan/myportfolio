@@ -8,12 +8,11 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            // TODO: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-            emailjs.init("YOUR_PUBLIC_KEY");
+            emailjs.init("AaVqb3IhL64FDK4Di");
         })();
     </script>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { primary: '#3b82f6', secondary: '#6366f1' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <script>tailwind.config = { theme: { extend: { colors: { primary: '#27DEBF', secondary: '#2563eb' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -21,109 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <style>
-        :where([class^="ri-"])::before {
-            content: "\f3c2";
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-
-        .project-card:hover .project-image {
-            transform: scale(1.05);
-        }
-
-        .skill-bar-fill {
-            transition: width 1s ease-in-out;
-        }
-
-        .modal {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .modal.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-        }
-
-        .dark {
-            background-color: #121212;
-            color: #f3f4f6;
-        }
-
-        .dark .bg-white {
-            background-color: #1f2937;
-        }
-
-        .dark .text-gray-800 {
-            color: #f3f4f6;
-        }
-
-        .dark .text-gray-700 {
-            color: #e5e7eb;
-        }
-
-        .dark .text-gray-600 {
-            color: #d1d5db;
-        }
-
-        .dark .border-gray-200 {
-            border-color: #374151;
-        }
-
-        .dark .shadow-lg {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
-        }
-
-        .dark .bg-gray-50 {
-            background-color: #1f2937;
-        }
-
-        .dark .bg-gray-100 {
-            background-color: #374151;
-        }
-
-        .dark input,
-        .dark textarea {
-            background-color: #374151;
-            color: #f3f4f6;
-            border-color: #4b5563;
-        }
-
-        .section-fade {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .section-fade.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -156,29 +53,55 @@
             </div>
         </div>
     </header>
-    <section id="accueil" class="min-h-screen flex items-center justify-center pt-20 pb-16"
-        style="background-image: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 section-fade">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Bonjour, je suis <span
-                        class="text-primary">Othmane El Fakkak</span></h1>
-                <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Étudiant en BUT3 Informatique – Développement
-                    d'applications</h2>
-                <p class="text-lg text-gray-700 mb-8 max-w-xl mx-auto lg:mx-0">Voici une sélection de mes projets
-                    réalisés durant mon parcours. Passionné par le développement web et mobile, j'aime créer des
-                    solutions innovantes et intuitives.</p>
-                <a href="#projets"
-                    class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-blue-600 transition-colors shadow-md whitespace-nowrap">Voir
-                    mes projets</a>
+    <!-- Hero Section -->
+    <section id="accueil" class="min-h-screen flex items-center justify-center pt-20 pb-16 relative bg-gradient-to-br from-[#E0E7FF] via-[#EEF2FF] to-[#C7D2FE] overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center relative max-w-screen-2xl">
+            <div class="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 section-fade animate-fadeInLeft">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight text-gray-900">
+                    <span class="text-primary">Othmane El Fakkak</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl text-gray-700 mb-6 font-semibold">
+                    Développeur d'applications créatif & passionné<br>Transformant les idées en <span class="text-primary" id="typed-text-target"></span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Actuellement étudiant en BUT3 Informatique, je conçois et développe des applications web et mobiles innovantes. Explorez mes projets pour découvrir mon parcours.
+                </p>
+                <a href="#projets" class="inline-block bg-primary text-white px-10 py-4 rounded-button font-semibold hover:bg-blue-600 transition-colors shadow-lg hover:shadow-xl whitespace-nowrap transform hover:-translate-y-1 hover:scale-105">
+                    Voir mes projets
+                </a>
             </div>
-            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end section-fade" style="animation-delay: 0.3s;">
-                <div class="relative w-full max-w-md">
-                    <img src="https://readdy.ai/api/search-image?query=young%20professional%20developer%20man%20with%20glasses%20in%20casual%20outfit%20working%20on%20laptop%2C%20minimalist%20style%2C%20clean%20background%2C%20high%20quality%20professional%20portrait%2C%20soft%20lighting&width=600&height=600&seq=1&orientation=portrait"
-                        alt="Othmane El Fakkak" class="rounded-2xl shadow-xl object-cover">
-                </div>
-            </div>
+            <img src="Image/hov.svg" alt="Illustration" class="w-full lg:w-1/2 mt-0 animate-fadeInRight max-w-lg lg:max-w-2xl xl:max-w-3xl h-auto mx-auto lg:block lg:ml-auto lg:mr-0">
         </div>
     </section>
+
+    <style>
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.animate-fadeInLeft {
+    animation: fadeInLeft 1s ease forwards;
+}
+.animate-fadeInRight {
+    animation: fadeInRight 1s ease forwards;
+}
+</style>
     <section id="projets" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 section-fade">
@@ -191,20 +114,24 @@
                 <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl section-fade"
                     data-project="1">
                     <div class="relative overflow-hidden h-64">
-                <img src="Image/photo1.jpg"
+                <img src="Image/sae.jpg"
                     alt="SAE Project"
-                    class="project-image w-full h-full object-cover transition-transform duration-300">
+                    class="project-image w-full h-full object-cover object-center transition-transform duration-300">
                         <a href="sae.html"
                             class="absolute inset-0 flex items-center justify-center bg-primary bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 text-white font-medium !rounded-button">Voir
                             détails</a>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">SAE</h3>
+<h3 class="text-xl font-bold mb-2">GEST PLANTE (SAÉ)</h3>
                         <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Technologie 1</span>
-                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Technologie 2</span>
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Java</span>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Android</span>
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">XML</span>
+                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">MongoDB</span>
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Node.js</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Vue.js</span>
                         </div>
-                        <p class="text-gray-600 mb-4">Description du projet SAE à ajouter.</p>
+                        <p class="text-gray-600 mb-4">Projet universitaire visant à développer une solution IoT pour la surveillance de plantes, incluant une application mobile Android, un backend Java et une interface web Vue.js.</p>
                     </div>
                 </div>
                 <!-- Projet 2 -->
@@ -404,72 +331,72 @@
                         </div>
                         Compétences Techniques
                     </h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Java</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">JavaScript / TypeScript</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 90%"></div>
+                    <div class="space-y-4">
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-700 flex items-center">
+                                <i class="ri-braces-line mr-2 text-primary"></i>Langages de Programmation
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">C</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">C#</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">HTML/CSS</span>
+                                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full text-sm font-medium">React / Vue.js</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">PHP</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">HTML/CSS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 95%"></div>
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-700 flex items-center">
+                                <i class="ri-database-2-line mr-2 text-primary"></i>Gestion de données
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Power BI</span>
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Excel</span>
+                                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-medium">Google Data Studio</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">SQL / NoSQL</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">React / Vue.js</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 80%"></div>
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-700 flex items-center">
+                                <i class="ri-shield-check-line mr-2 text-primary"></i>Cybersécurité
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Audit de sécurité</span>
+                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Analyse de vulnérabilités</span>
+                                <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Sécurité réseaux (Windows, Linux)</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium">Git / GitHub</span>
-                                <span>90%</span>
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-700 flex items-center">
+                                <i class="ri-server-line mr-2 text-primary"></i>Administration IT
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Windows Server</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Infrastructures réseaux</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Virtualisation</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Support technique</span>
                             </div>
-                            <div class="h-2 bg-gray-200 rounded-full">
-                                <div class="skill-bar-fill h-full bg-primary rounded-full" style="width: 90%"></div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-700 flex items-center">
+                                <i class="ri-tools-line mr-2 text-primary"></i>Outils
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">Windows 10/11</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">Linux</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">MS Office</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">Visual Studio</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">IntelliJ IDEA</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">GIT</span>
+                                <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Compétences transversales -->
                 <div class="section-fade">
                     <h3 class="text-2xl font-bold mb-6 flex items-center">
@@ -480,63 +407,66 @@
                     </h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Gestion de projet Agile</h4>
-                                <p class="text-gray-600">Expérience avec Scrum et Kanban, planification de sprints et
-                                    réunions quotidiennes.</p>
+                                <h4 class="font-medium mb-1">Gestion de Projet</h4>
+                                <p class="text-gray-600">Planification et suivi de tâches, gestion de projets informatiques. Expérience dans le déploiement de solutions et la modernisation d'infrastructures IT.</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Travail en équipe</h4>
-                                <p class="text-gray-600">Collaboration efficace, communication claire et résolution de
-                                    problèmes en groupe.</p>
+                                <h4 class="font-medium mb-1">Communication & Collaboration</h4>
+                                <p class="text-gray-600">Excellente communication (Français C1, Anglais C1), collaboration en équipe, support utilisateur et aisance dans des contextes interculturels.</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Analyse et conception</h4>
-                                <p class="text-gray-600">Modélisation UML, architecture logicielle et conception
-                                    orientée objet.</p>
+                                <h4 class="font-medium mb-1">Analyse & Résolution de Problèmes</h4>
+                                <p class="text-gray-600">Analyse critique, conception de solutions, diagnostic et résolution de problèmes techniques complexes.</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Veille technologique</h4>
-                                <p class="text-gray-600">Suivi des tendances et nouvelles technologies dans le domaine
-                                    du développement.</p>
+                                <h4 class="font-medium mb-1">Support Technique & Maintenance</h4>
+                                <p class="text-gray-600">Installation, configuration, maintenance (matérielle et logicielle) et support technique.</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Tests et débogage</h4>
-                                <p class="text-gray-600">Tests unitaires, tests d'intégration et résolution efficace de
-                                    bugs.</p>
+                                <h4 class="font-medium mb-1">Initiative & Autonomie</h4>
+                                <p class="text-gray-600">Prise d'initiative dans le développement de solutions internes et la gestion de projets. Capacité à travailler de manière autonome et proactive.</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
                                 <i class="ri-checkbox-circle-line"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium mb-1">Anglais technique</h4>
-                                <p class="text-gray-600">Niveau B2, lecture de documentation technique et communication
-                                    professionnelle.</p>
+                                <h4 class="font-medium mb-1">Veille Technologique & Apprentissage Continu</h4>
+                                <p class="text-gray-600">Suivi actif des évolutions technologiques pour maintenir des compétences à jour.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3 text-primary mt-1 shrink-0">
+                                <i class="ri-checkbox-circle-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Adaptabilité & Polyvalence</h4>
+                                <p class="text-gray-600">Forte capacité d'adaptation à divers environnements techniques et projets, démontrée par un parcours académique et professionnel varié.</p>
                             </div>
                         </li>
                     </ul>
@@ -741,7 +671,7 @@
             <div class="p-6 md:p-8">
                 <h3 class="text-2xl font-bold mb-4">Application Mobile Fitness</h3>
                 <div class="mb-8">
-                    <img src="https://readdy.ai/api/search-image?query=fitness%20mobile%20app%20interface%20showing%20multiple%20screens%20including%20workout%20tracking%2C%20nutrition%20planning%2C%20progress%20charts%2C%20and%20user%20profile%2C%20professional%20mobile%20application%20development%20project%20with%20modern%20UI%20design%20on%20smartphone%20mockups&width=1200&height=600&seq=7&orientation=landscape"
+                    <img src="https://readdy.ai/api/search-image?query=fitness%20mobile%20app%20interface%20showing%20multiple%20screens%20including%20workout%20cmdking%2C%20nutrition%20planning%2C%20progress%20charts%2C%20and%20user%20profile%2C%20professional%20mobile%20application%20development%20project%20with%20modern%20UI%20design%20on%20smartphone%20mockups&width=1200&height=600&seq=7&orientation=landscape"
                         alt="Application Mobile Fitness" class="w-full h-auto rounded-lg">
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -1002,190 +932,13 @@
             </div>
         </div>
     </div>
-    <script id="navigation-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            const header = document.querySelector('header');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            // Gestion du menu mobile
-            mobileMenuButton.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-                if (mobileMenu.classList.contains('hidden')) {
-                    mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
-                } else {
-                    mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
-                }
-            });
-            // Fermer le menu mobile lors du clic sur un lien
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function () {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
-                });
-            });
-            // Header compact au scroll
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 50) {
-                    header.classList.add('py-2');
-                    header.classList.remove('py-4');
-                } else {
-                    header.classList.add('py-4');
-                    header.classList.remove('py-2');
-                }
-            });
-            // Smooth scroll pour les ancres
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
-    <script id="theme-toggle-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            const themeToggle = document.getElementById('theme-toggle');
-            const htmlElement = document.documentElement;
-            // Vérifier si un thème est déjà stocké
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                htmlElement.classList.add('dark');
-                themeToggle.innerHTML = '<i class="ri-moon-line ri-lg"></i>';
-            } else {
-                themeToggle.innerHTML = '<i class="ri-sun-line ri-lg"></i>';
-            }
-            // Basculer entre les thèmes
-            themeToggle.addEventListener('click', function () {
-                if (htmlElement.classList.contains('dark')) {
-                    htmlElement.classList.remove('dark');
-                    localStorage.setItem('theme', 'light');
-                    themeToggle.innerHTML = '<i class="ri-sun-line ri-lg"></i>';
-                } else {
-                    htmlElement.classList.add('dark');
-                    localStorage.setItem('theme', 'dark');
-                    themeToggle.innerHTML = '<i class="ri-moon-line ri-lg"></i>';
-                }
-            });
-        });
-    </script>
-    <script id="project-modals-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            // Ouvrir les modals de projet
-            const projectButtons = document.querySelectorAll('.view-project-btn');
-            projectButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const projectCard = this.closest('.project-card');
-                    const projectId = projectCard.dataset.project;
-                    const modal = document.getElementById(`project-modal-${projectId}`);
-                    if (modal) {
-                        modal.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                    }
-                });
-            });
-            // Fermer les modals
-            const closeButtons = document.querySelectorAll('.close-modal');
-            closeButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const modalId = this.dataset.modal;
-                    const modal = document.getElementById(`project-modal-${modalId}`);
-                    if (modal) {
-                        modal.classList.remove('active');
-                        document.body.style.overflow = '';
-                    }
-                });
-            });
-            // Fermer les modals en cliquant sur l'overlay
-            const overlays = document.querySelectorAll('[id^="modal-overlay-"]');
-            overlays.forEach(overlay => {
-                overlay.addEventListener('click', function () {
-                    const modalId = this.id.split('-').pop();
-                    const modal = document.getElementById(`project-modal-${modalId}`);
-                    if (modal) {
-                        modal.classList.remove('active');
-                        document.body.style.overflow = '';
-                    }
-                });
-            });
-        });
-    </script>
-    <script id="contact-form-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            const contactForm = document.getElementById('contact-form');
-            const formSuccess = document.getElementById('form-success');
-            const formError = document.getElementById('form-error');
-            contactForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formData = new FormData(contactForm);
-                const data = {
-                    name: formData.get('name'),
-                    email: formData.get('email'),
-                    subject: formData.get('subject'),
-                    message: formData.get('message'),
-                    to: 'othmane.el.fakkak@gmail.com'
-                };
-                // Using Email.js service for sending emails
-                // TODO: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-                    to_email: 'othmane.el.fakkak@gmail.com',
-                    from_name: data.name,
-                    from_email: data.email,
-                    subject: data.subject,
-                    message: data.message
-                })
-                    .then(function (response) {
-                        contactForm.reset();
-                        formSuccess.classList.remove('hidden');
-                        formError.classList.add('hidden');
-                        setTimeout(() => {
-                            formSuccess.classList.add('hidden');
-                        }, 5000);
-                    }, function (error) {
-                        formError.classList.remove('hidden');
-                        formSuccess.classList.add('hidden');
-                        setTimeout(() => {
-                            formError.classList.add('hidden');
-                        }, 5000);
-                        console.error('Error:', error);
-                    });
-            });
-        });
-    </script>
-    <script id="animation-script">
-        document.addEventListener('DOMContentLoaded', function () {
-            // Animation des barres de compétences
-            const skillBars = document.querySelectorAll('.skill-bar-fill');
-            // Animation des sections au scroll
-            const sections = document.querySelectorAll('.section-fade');
-            // Fonction pour vérifier si un élément est visible
-            function isElementInViewport(el) {
-                const rect = el.getBoundingClientRect();
-                return (
-                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8
-                );
-            }
-            // Fonction pour animer les éléments visibles
-            function animateOnScroll() {
-                sections.forEach(section => {
-                    if (isElementInViewport(section) && !section.classList.contains('visible')) {
-                        section.classList.add('visible');
-                    }
-                });
-            }
-            // Vérifier les éléments visibles au chargement
-            animateOnScroll();
-            // Vérifier les éléments visibles au scroll
-            window.addEventListener('scroll', animateOnScroll);
-        });
-    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/js/themeToggle.js"></script>
+    <script src="assets/js/mobileMenu.js"></script>
+    <script src="assets/js/animationScroll.js"></script>
+    <script src="assets/js/projectModals.js"></script>
+    <script src="assets/js/imageModal.js"></script>
+    <script src="assets/js/contactForm.js"></script>
+    <script src="assets/js/typingAnimation.js"></script> <!-- Added new script for typing animation -->
 </body>
-
 </html>
